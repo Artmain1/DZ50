@@ -3,20 +3,20 @@
 
 int m =  ReadInt("количество строк: ");
 int n = ReadInt("количество столбцов: ");
-int positionM = ReadInt("позиция в строке: ");
-int positionN = ReadInt("позиция в столбце: ");
+int M = ReadInt("позиция в строке: ");
+int N = ReadInt("позиция в столбце: ");
 int[,] matrix = new int[m, n];
 
 FillArray(matrix);
 PrintArray(matrix);
 
-if (positionM >= m || positionN >= n)
+if (M >= m || N >= n)
 {
     Console.Write($"Такого элемента нет.");
 }
 else
 {
-   Console.Write($"Значение элемента: {matrix[positionM, positionM]}");
+   Console.Write($"Значение элемента: {matrix[M, N]}");
 }
 
 int ReadInt(string message)
